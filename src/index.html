@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天天果园</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common_style.css">
+    <link type="text/css" rel="stylesheet" href="css/index_style.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/lib/jquery-3.2.1.js"></script>
+    <script src="js/common_top.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/lib/jquery.cookie/jquery.cookie.js"></script>
+
+</head>
+<body>
+    <!--网页顶部-->
+    <div id="f-common-header">
+        <div class="topnav">
+            <div class="content">
+                <div class="content-left">
+                    <span class="user-address">
+                        <i class="caricon iconfont">&#xe60e;</i>
+                        <a href="#" class="city">
+                            上海
+
+                        </a>
+                        <i class="sel iconfont">&#xe683;</i>
+                        <div class="hotcity" style="display: none">
+                            <h5>热门城市</h5>
+                            <div class="subhotcity">
+                                <a href="javascript:;">上海</a>
+                                <a href="javascript:;">北京</a>
+                                <a href="javascript:;">广州</a>
+                                <a href="javascript:;">深圳</a>
+                                <a href="javascript:;">南京</a>
+                            </div>
+                            <h5>选择城市</h5>
+                            <ul class="detail_city">
+                                <li><a href="javascript:;">上海</a></li>
+                                <li><a href="javascript:;">上海崇明</a></li>
+                                <li>
+                                    <a href="javascript:;">江苏</a>
+                                    <i class="iconfont">&#xe626;</i>
+                                    <div class="citylist" style="display: none">
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:;">浙江</a><i class="iconfont">&#xe626;</i></li>
+                                <li><a href="javascript:;">安徽</a><i class="iconfont">&#xe626;</i></li>
+                                <li><a href="javascript:;">北京</a></li>
+                                <li><a href="javascript:;">天津</a></li>
+                                <li><a href="javascript:;">河北</a><i class="iconfont">&#xe626;</i></li>
+                                <li><a href="javascript:;">广东</a><i class="iconfont">&#xe626;</i></li>
+
+                            </ul>
+                        </div>
+                    </span>
+                    <p class="slogan">满百包邮（环郊内）</p>
+                    <a href="javascript:;" class="link-xyd" target="_blank">星夜达</a>
+                </div>
+                <div class="content-right">
+                    <ul>
+                        <li class="loginmsg"><span>您好 , </span>
+                            <a href="javascript;:" id="username"></a>，
+                            <a href="javascript:;">退出</a>
+                        </li>
+                        <li class="tologin">
+                            <a href="login.html">[ 登录 ]&nbsp;</a>，
+                            <a href="register.html">[ 注册有惊喜 ]</a>
+                        </li>
+                        <li>|</li>
+                        <li class="gygg">果园公告
+                        <div class="f-common-notice">
+                            <ul>
+                                <li><a href="#">全仓充值调整公告</a></li>
+                                <li><a href="#">全仓充值调整公告</a></li>
+                                <li><a href="#">全仓充值调整公告</a></li>
+                            </ul>
+                            <div class="more"><a href="#">查看更多></a></div>
+                        </div>
+
+                        </li>
+                        <li>|</li>
+                        <li><a href="#">券卡兑换</a></li>
+                        <li>|</li>
+                        <li class="phonegg">
+                            <i class="iconfont">&#xe602;</i>
+                            手机果园
+                            <div class="f-common-topcode">
+                                <div class="textcenter">下载果园app, 即享果园特价商品</div>
+                                <dl class="clearfix">
+                                    <dt><img src="images/guan_ewcode2.jpg"></dt>
+                                    <dd>
+                                        <a href="#"><img src="images/guan_btn01.jpg"></a>
+                                        <a href="#"><img src="images/guan_btn02.jpg"></a>
+                                    </dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt><img src="images/guan_ewcode1.jpg"></dt>
+                                    <dd>
+                                        <p>关注果园微信</p>
+                                        <span>优惠信息实时掌握</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <i class="telserver iconfont">&#xe610;</i>
+                            400-720-0770
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <h4><a href="index.html"><img src="images/logo.png"></a></h4>
+            <div class="m-nav">
+                <ul class="nav_ul">
+                    <li>
+                        <a href="javascript:;">
+                            首页
+                            <span>Home</span>
+                            <em class="nav_bottom"></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="xianguo.html">
+                            鲜果
+                            <span>Fruit</span>
+                            <em></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            生鲜
+                            <span>Fresh</span>
+                            <em></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            礼品
+                            <span>Gift</span>
+                            <em></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            会员中心
+                            <span>Vip Club</span>
+                            <em></em>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="search">
+                <div class="f-common-search">
+                    <input type="text" id="keyword-search" value="奇异果" placeholder="请输入关键字">
+                    <button type="button"><i class="iconfont">&#xe634;</i></button>
+                    <div class="hotsearch">
+                        热门 :
+                        <a href="javascript:;">橙</a>
+                        <a href="javascript:;">提子</a>
+                        <a href="javascript:;">樱桃</a>
+                        <a href="javascript:;">苹果</a>
+                    </div>
+                    <div class="subsearch">
+                        <ul>
+                            <li><a href="javascript:;">奇异果1</a></li>
+                            <li><a href="javascript:;">奇异果2</a></li>
+                            <li><a href="javascript:;">奇异果3</a></li>
+                            <li><a href="javascript:;">奇异果4</a></li>
+                            <li><a href="javascript:;">奇异果5</a></li>
+                            <li><a href="javascript:;">奇异果6</a></li>
+                            <li><a href="javascript:;">奇异果7</a></li>
+                            <li><a href="javascript:;">奇异果8</a></li>
+                            <li><a href="javascript:;">奇异果9</a></li>
+                            <li><a href="javascript:;">奇异果0</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-common-cart">
+                    <div class="minicart">
+                        <i class="iconfont">&#xe609;</i>
+                        <span id="sum-goods">0</span>
+                    </div>
+                    <div class="cart_list">
+                        <i class="iconfont"></i>
+                        <div class="good_cart_list">
+                            <ul class="cartul">
+                                <!--<li class="clearfix">-->
+                                    <!--<div class="goods_img">-->
+                                        <!--<img src="images/lp-2.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div class="goods_msg">-->
+                                        <!--<p class="goods_msg_tit">团聚礼盒</p>-->
+                                        <!--<span class="goods_price_num">¥168.00 / 礼篮</span>-->
+                                        <!--<div class="goods_numchos">-->
+                                            <!--<span class="num_desc">-</span>-->
+                                            <!--<span class="num_show">1</span>-->
+                                            <!--<span class="num_add">+</span>-->
+                                        <!--</div>-->
+                                        <!--<span class="li_del">删除</span>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                            </ul>
+                            <div class="goods_simplemsg">
+                                <span class="goods_num">共 <em class="cart_num">2</em> 件商品</span>
+                                <span class="goods_totalprice">商品小计 <em class="cart_countprice">168.00</em></span>
+                            </div>
+                            <div class="dealbtn">
+                                <button type="button" class="cur_deal">立即结算</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_nothing">
+                        <h5 class="goods_tips">购物车中还没有商品,赶紧选购吧!</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--轮播广告图-->
+    <div id="f-banner">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/b-1.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/b-2.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/b-3.jpg"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+        </div>
+    </div>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!--4张广告图-->
+    <div id="list_adv">
+        <div class="list_show">
+            <div class="list_show_detail">
+                <a href="#"><img src="images/list_show_1.jpg" ></a>
+                <a href="#"><img src="images/list_show_2.jpg" ></a>
+                <a href="#"><img src="images/list_show_3.jpg" ></a>
+                <a href="#"><img src="images/list_show_4.jpg" ></a>
+            </div>
+        </div>
+    </div>
+
+    <!--主体内容-->
+    <div class="fruit_kinds">
+        <div class="fruit_kinds_content">
+            <div class="goods_kinds_tit">
+                <span><img src="images/t4.png"></span>
+                <a href="#">更多></a>
+            </div>
+            <div class="fruit_list">
+                <ul class="f_addli">
+                    <li>
+
+                        <div class="f-detail-img">
+                            <img src="images/lp-1.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <a href="productdetail.html">
+                                <div class="f-detail-goods-msg">
+                                    <p class="goods_intro">真心祝福水果礼篮</p>
+                                    <span class="goods_price">¥358.00/礼篮</span>
+                                </div>
+                            </a>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-2.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">团聚礼盒</p>
+                                <span class="goods_price">¥168.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-3.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">欢乐时光水果礼篮</p>
+                                <span class="goods_price">¥188.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-4.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">心想事成水果礼篮</p>
+                                <span class="goods_price">¥218.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-6.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">真心祝福水果礼篮</p>
+                                <span class="goods_price">¥358.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fruit_kinds">
+        <div class="fruit_kinds_content">
+            <div class="goods_kinds_tit">
+                <span><img src="images/t1.png"></span>
+                <a href="#">更多></a>
+            </div>
+            <div class="fruit_list">
+                <ul>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-1.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">真心祝福水果礼篮</p>
+                                <span class="goods_price">¥358.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-2.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">团聚礼盒</p>
+                                <span class="goods_price">¥168.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-3.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">欢乐时光水果礼篮</p>
+                                <span class="goods_price">¥188.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-4.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">心想事成水果礼篮</p>
+                                <span class="goods_price">¥218.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-6.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">真心祝福水果礼篮</p>
+                                <span class="goods_price">¥358.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-7.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">团聚礼盒</p>
+                                <span class="goods_price">¥168.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-8.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">欢乐时光水果礼篮</p>
+                                <span class="goods_price">¥188.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-4.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">心想事成水果礼篮</p>
+                                <span class="goods_price">¥218.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fruit_kinds">
+        <div class="fruit_kinds_content">
+            <div class="goods_kinds_tit">
+                <span><img src="images/t2.png"></span>
+                <a href="#">更多></a>
+            </div>
+            <div class="fruit_list">
+                <ul>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-1.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">真心祝福水果礼篮</p>
+                                <span class="goods_price">¥358.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-2.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">团聚礼盒</p>
+                                <span class="goods_price">¥168.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-3.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">欢乐时光水果礼篮</p>
+                                <span class="goods_price">¥188.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-4.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">心想事成水果礼篮</p>
+                                <span class="goods_price">¥218.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-6.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">真心祝福水果礼篮</p>
+                                <span class="goods_price">¥358.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-7.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">团聚礼盒</p>
+                                <span class="goods_price">¥168.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-8.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">欢乐时光水果礼篮</p>
+                                <span class="goods_price">¥188.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-4.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">心想事成水果礼篮</p>
+                                <span class="goods_price">¥218.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fruit_kinds">
+        <div class="fruit_kinds_content">
+            <div class="goods_kinds_tit">
+                <span><img src="images/t3.png"></span>
+                <a href="#">更多></a>
+            </div>
+            <div class="fruit_list">
+                <ul>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-1.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">真心祝福水果礼篮</p>
+                                <span class="goods_price">¥358.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-2.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">团聚礼盒</p>
+                                <span class="goods_price">¥168.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-3.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">欢乐时光水果礼篮</p>
+                                <span class="goods_price">¥188.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-4.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">心想事成水果礼篮</p>
+                                <span class="goods_price">¥218.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-6.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">真心祝福水果礼篮</p>
+                                <span class="goods_price">¥358.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-7.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">团聚礼盒</p>
+                                <span class="goods_price">¥168.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-8.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">欢乐时光水果礼篮</p>
+                                <span class="goods_price">¥188.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-4.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">心想事成水果礼篮</p>
+                                <span class="goods_price">¥218.00/礼篮</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f-detail-img">
+                            <img src="images/lp-5.jpg">
+                        </div>
+                        <div class="f-detail-msg">
+                            <div class="f-detail-goods-msg">
+                                <p class="goods_intro">新西兰奇异果水果礼篮</p>
+                                <span class="goods_price">¥358.00/16个</span>
+                            </div>
+                            <div class="goods_cart">
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--购物车弹出框-->
+    <div class="shop_cartbox">
+        <div class="shop_cart">
+            <div class="shop_close">
+                <span class="shop_cartbox_close"></span>
+            </div>
+            <div class="shop_tips">
+                <span></span>
+                <p>加入购物车成功！</p>
+            </div>
+            <div class="shop_msg">
+                <p>购物车中共 <b>4</b> 件商品 | 商品小计 <b>￥555.00</b></p>
+            </div>
+            <div class="shop_next">
+                <button type="button" class="contiue">继续购物</button>
+                <button type="button" class="deal">去结算</button>
+            </div>
+        </div>
+    </div>
+
+    <!--侧边固定栏-->
+    <div class="toolbarfoot">
+        <a href="#" class="carchange"></a>
+        <a href="#" class="wechat"></a>
+        <a href="#" class="backtop"></a>
+    </div>
+    <!--底部-->
+    <div id="f-common-footer">
+        <div class="f_footer_content">
+            <div class="f_advantage">
+                <ul>
+                    <li class="comment_icon"></li>
+                    <li class="comment_icon"></li>
+                    <li class="comment_icon"></li>
+                    <li class="comment_icon"></li>
+                </ul>
+            </div>
+            <div class="connect">
+                <div class="tel">
+                    <h4></h4>
+                    <p>电话客服 <b>09:00 - 21:00 </b></p>
+                    <p>在线客服 <b>08:00 - 24:00 </b></p>
+                </div>
+                <div class="qr_code">
+                    <dl>
+                        <dt><img src="images/guan_ewcode1.jpg"></dt>
+                        <dd>天天果园官方微信</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/guan_ewcode2.jpg"></dt>
+                        <dd>天天果园APP</dd>
+                    </dl>
+                </div>
+                <div class="tips">
+                    <ul>
+                        <div class="meun">购物指南</div>
+                        <li><a href="#">新用户注册</a></li>
+                        <li><a href="#">在线下单</a></li>
+                        <li><a href="#">支付方式</a> </li>
+                    </ul>
+                    <ul>
+                        <div class="meun">配送说明</div>
+                        <li><a href="#">运费说明</a></li>
+                        <li><a href="#">运费方式</a></li>
+                        <li><a href="#">发票说明</a> </li>
+                    </ul>
+                    <ul>
+                        <div class="meun">售后服务</div>
+                        <li><a href="#">退换货规则</a></li>
+                        <li><a href="#">服务保障承诺</a></li>
+                        <li><a href="#">验货与签收</a> </li>
+                    </ul>
+                    <ul>
+                        <div class="meun">企业服务</div>
+                        <li><a href="#">企业订购</a></li>
+                        <li><a href="#">公司简介</a></li>
+                        <li><a href="#">定制专区</a> </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>版权所有 ©2017上海天天鲜果电子商务有限公司  保留所有权利 | 沪ICP备12042163</p>
+                <span>天天果园  鲜果网购</span>
+                <div class="judicial">
+                    <a href="#"><img src="images/guan_shgs.gif"></a>
+                    <a href="#" class="car-govenment"><img src="images/guan_wgdjp.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

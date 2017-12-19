@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common_style.css">
+    <link type="text/css" rel="stylesheet" href="css/cart_style.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+
+    <script src="js/lib/jquery-3.2.1.js"></script>
+    <script src="js/lib/jquery.cookie/jquery.cookie.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/common_top.js"></script>
+    <script src="js/cart.js"></script>
+</head>
+<body>
+
+<!--网页顶部-->
+    <div id="f-common-header">
+        <div class="topnav">
+            <div class="content">
+                <div class="content-left">
+                    <span class="user-address">
+                        <i class="caricon iconfont">&#xe60e;</i>
+                        <a href="#" class="city">
+                            上海
+
+                        </a>
+                        <i class="sel iconfont">&#xe683;</i>
+                        <div class="hotcity" style="display: none">
+                            <h5>热门城市</h5>
+                            <div class="subhotcity">
+                                <a href="javascript:;">上海</a>
+                                <a href="javascript:;">北京</a>
+                                <a href="javascript:;">广州</a>
+                                <a href="javascript:;">深圳</a>
+                                <a href="javascript:;">南京</a>
+                            </div>
+                            <h5>选择城市</h5>
+                            <ul class="detail_city">
+                                <li><a href="javascript:;">上海</a></li>
+                                <li><a href="javascript:;">上海崇明</a></li>
+                                <li>
+                                    <a href="javascript:;">江苏</a>
+                                    <i class="iconfont">&#xe626;</i>
+                                    <div class="citylist" style="display: none">
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                        <a href="javascript:;">常州</a>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:;">浙江</a><i class="iconfont">&#xe626;</i></li>
+                                <li><a href="javascript:;">安徽</a><i class="iconfont">&#xe626;</i></li>
+                                <li><a href="javascript:;">北京</a></li>
+                                <li><a href="javascript:;">天津</a></li>
+                                <li><a href="javascript:;">河北</a><i class="iconfont">&#xe626;</i></li>
+                                <li><a href="javascript:;">广东</a><i class="iconfont">&#xe626;</i></li>
+
+                            </ul>
+                        </div>
+                    </span>
+                    <p class="slogan">满百包邮（环郊内）</p>
+                    <a href="javascript:;" class="link-xyd" target="_blank">星夜达</a>
+                </div>
+                <div class="content-right">
+                    <ul>
+                        <li>
+                            <a href="login.html">[ 登录 ]&nbsp;</a>，
+                            <a href="register.html">[ 注册有惊喜 ]</a>
+                        </li>
+                        <li>|</li>
+                        <li class="gygg">果园公告
+                            <div class="f-common-notice">
+                                <ul>
+                                    <li><a href="#">全仓充值调整公告</a></li>
+                                    <li><a href="#">全仓充值调整公告</a></li>
+                                    <li><a href="#">全仓充值调整公告</a></li>
+                                </ul>
+                                <div class="more"><a href="#">查看更多></a></div>
+                            </div>
+
+                        </li>
+                        <li>|</li>
+                        <li><a href="#">券卡兑换</a></li>
+                        <li>|</li>
+                        <li class="phonegg">
+                            <i class="iconfont">&#xe602;</i>
+                            手机果园
+                            <div class="f-common-topcode">
+                                <div class="textcenter">下载果园app, 即享果园特价商品</div>
+                                <dl class="clearfix">
+                                    <dt><img src="images/guan_ewcode2.jpg"></dt>
+                                    <dd>
+                                        <a href="#"><img src="images/guan_btn01.jpg"></a>
+                                        <a href="#"><img src="images/guan_btn02.jpg"></a>
+                                    </dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt><img src="images/guan_ewcode1.jpg"></dt>
+                                    <dd>
+                                        <p>关注果园微信</p>
+                                        <span>优惠信息实时掌握</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <i class="telserver iconfont">&#xe610;</i>
+                            400-720-0770
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="navbar">
+        <h4><a href="index.html"><img src="images/logo.png"></a></h4>
+        <ul class="buy_step">
+            <li class="pull-left li1">
+                <span>1</span>
+                <p>我的购物车</p>
+            </li>
+            <li class="pull-left li2">
+                <span>2</span>
+                <p>确认订单信息</p>
+            </li>
+            <li class="pull-left li3">
+                <span>3</span>
+                <p>成功提交订单</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <!--购物车内容-->
+    <div class="f_cart">
+        <div class="f_cart_content">
+            <div class="f_cart_tit">
+                <i class="iconfont">&#xe664;</i>
+                <p>我的购物车</p>
+                <a href="index.html"><span>继续逛逛>></span></a>
+            </div>
+            <div class="f_cart_detail">
+                <div class="detail_tit">
+                    <p>商品</p>
+                    <p>规格</p>
+                    <p>单价(元)</p>
+                    <p>数量</p>
+                    <p>总价(元)</p>
+                    <p>操作</p>
+                </div>
+                <div class="carts_detail">
+                    <!--<div class="f_cart_detailmsg clearfix">-->
+                        <!--<div class="f_miniImg">-->
+                            <!--<a href="#"><img src="images/lp-2.jpg"></a>-->
+                        <!--</div>-->
+                        <!--<div class="f_fruit_name">-->
+                            <!--<a href="#">欢乐时光水果礼篮</a>-->
+                        <!--</div>-->
+                        <!--<div class="f_size"><span>1份</span></div>-->
+                        <!--<div class="f_price">-->
+                            <!--<span id="f_nowprice2">¥188.00</span>-->
+                        <!--</div>-->
+                        <!--<div class="f_num">-->
+                            <!--<span class="f_num_desc">-</span>-->
+                            <!--<span class="f_num_show" id="f_num_show2">1</span>-->
+                            <!--<span class="f_num_add">+</span>-->
+                        <!--</div>-->
+                        <!--<div class="f_old_price">-->
+                            <!--<span>¥188.00</span>-->
+                        <!--</div>-->
+                        <!--<div class="f_opra">-->
+                            <!--<a href="#">删除</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+                <div class="changebuy">
+                    <span class="change">换</span>
+                    <p>
+                        <a href="#" class="change_detail">满59元+7.9元换购沈大成原味八宝饭</a>
+                    </p>
+                </div>
+                <div class="changebuy">
+                    <span class="change">换</span>
+                    <p>
+                        <a href="#" class="change_detail">满59元+7.9元换购沈大成原味八宝饭</a>
+                    </p>
+                </div>
+                <div class="changebuy bdb">
+                    <span class="change">换</span>
+                    <p>
+                        <a href="#" class="change_detail">满59元+7.9元换购沈大成原味八宝饭</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="f_count">
+            <div class="count_box">
+                <span class="count_detail">已选择 <em class="f_total_num"></em> 件商品 | 订单金额</span>
+                <span class="count_money">¥488.00</span>
+                <a href="#" class="count_deal">去结算</a>
+            </div>
+        </div>
+        <div class="recommend_box">
+            <div class="recomend_tit clearfix">
+                <span class="b_history">你浏览过的商品</span>
+                <span class="b_intest">你可能感兴趣的商品</span>
+                <em></em>
+            </div>
+            <div class="recomend_goods">
+                <div class="goods_msg">
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <img src="images/lp-5.jpg">
+                                <p class="f_name">真心祝福水果礼篮</p>
+                                <p class="f_nowprice">¥188 / 礼篮</p>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <img src="images/lp-3.jpg">
+                                <p class="f_name">真心祝福水果礼篮</p>
+                                <p class="f_nowprice">¥188 / 礼篮</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--侧边固定栏-->
+    <div class="toolbarfoot">
+        <a href="#" class="carchange"></a>
+        <a href="#" class="wechat"></a>
+        <a href="#" class="backtop"></a>
+    </div>
+<!--底部-->
+<div id="f-common-footer">
+    <div class="f_footer_content">
+        <div class="f_advantage">
+            <ul>
+                <li class="comment_icon"></li>
+                <li class="comment_icon"></li>
+                <li class="comment_icon"></li>
+                <li class="comment_icon"></li>
+            </ul>
+        </div>
+        <div class="connect">
+            <div class="tel">
+                <h4></h4>
+                <p>电话客服 <b>09:00 - 21:00 </b></p>
+                <p>在线客服 <b>08:00 - 24:00 </b></p>
+            </div>
+            <div class="qr_code">
+                <dl>
+                    <dt><img src="images/guan_ewcode1.jpg"></dt>
+                    <dd>天天果园官方微信</dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/guan_ewcode2.jpg"></dt>
+                    <dd>天天果园APP</dd>
+                </dl>
+            </div>
+            <div class="tips">
+                <ul>
+                    <div class="meun">购物指南</div>
+                    <li><a href="#">新用户注册</a></li>
+                    <li><a href="#">在线下单</a></li>
+                    <li><a href="#">支付方式</a> </li>
+                </ul>
+                <ul>
+                    <div class="meun">配送说明</div>
+                    <li><a href="#">运费说明</a></li>
+                    <li><a href="#">运费方式</a></li>
+                    <li><a href="#">发票说明</a> </li>
+                </ul>
+                <ul>
+                    <div class="meun">售后服务</div>
+                    <li><a href="#">退换货规则</a></li>
+                    <li><a href="#">服务保障承诺</a></li>
+                    <li><a href="#">验货与签收</a> </li>
+                </ul>
+                <ul>
+                    <div class="meun">企业服务</div>
+                    <li><a href="#">企业订购</a></li>
+                    <li><a href="#">公司简介</a></li>
+                    <li><a href="#">定制专区</a> </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>版权所有 ©2017上海天天鲜果电子商务有限公司  保留所有权利 | 沪ICP备12042163</p>
+            <span>天天果园  鲜果网购</span>
+            <div class="judicial">
+                <a href="#"><img src="images/guan_shgs.gif"></a>
+                <a href="#" class="car-govenment"><img src="images/guan_wgdjp.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

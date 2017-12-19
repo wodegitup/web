@@ -1,0 +1,210 @@
+
+#f-banner{
+    width: 100%;
+    height: 400px;
+
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container img{
+    height: 100%;
+    text-align: center;
+}
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+
+}
+#list_adv{
+    width: 100%;
+    height: 200px;
+}
+.list_show{
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+}
+.list_show_detail{
+    margin-top: 10px;
+}
+.list_show_detail a{
+    margin-right: 23px;
+}
+.list_show_detail a:last-of-type{
+    margin-right:0;
+}
+/*详细图片列表*/
+.fruit_kinds{
+    width: 100%;
+}
+.fruit_kinds_content{
+    width: 1280px;
+    margin: 0 auto 50px;
+    border-top: 1px solid #cccccc;
+    display: block;
+    overflow: hidden;
+}
+.goods_kinds_tit{
+    margin-top: 18px;
+    margin-bottom: 10px;
+    height:42px;
+}
+.goods_kinds_tit a{
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #333333;
+    text-decoration: underline;
+}
+
+.fruit_list ul li{
+    float:left;
+    margin-right: 10px;
+}
+.fruit_list ul li:nth-of-type(5n){
+    margin-right:0;
+}
+.fruit_list ul li:hover{
+    cursor: pointer;
+}
+.f-detail-img{
+    width: 248px;
+    height: 248px;
+    overflow: hidden;
+}
+.f-detail-img img{
+    display: block;
+    transition: all 0.5s;
+}
+.f-detail-img img:hover{
+    transform: scale(1.1);
+}
+.f-detail-msg{
+    width: 248px;
+    height: 55px;
+    display: block;
+    position: relative;
+}
+.f-detail-goods-msg{
+    width: 210px;
+}
+.goods_intro{
+    font-size: 14px;
+    color: #555555;
+    margin-top: 10px;
+}
+.goods_price{
+    font-size: 14px;
+    color: #999999;
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+.goods_cart{
+    width: 41px;
+    height: 38px;
+    position: absolute;
+    right: -3px;
+    top:2px;
+    background: url("../images/icons.png") no-repeat -513px -240px;
+}
+
+
+
+/*点击购物车弹出框*/
+.shop_cartbox{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 99;
+    display: none;
+}
+
+.shop_cart{
+    width: 512px;
+    height: 277px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -138px 0 0 -256px;
+    background:#fff;
+    border: 6px solid rgba(0,0,0,0.5);
+    z-index: 99;
+    display: none;
+}
+.shop_close{
+    height: 40px;
+    background-color: #eaeaea;
+}
+.shop_close span{
+    width: 21px;
+    height: 21px;
+    display: block;
+    float: right;
+    margin-right: 18px;
+    margin-top: 10px;
+    background: url("../images/cha.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.shop_tips{
+    margin-top: 27px;
+    height: 70px;
+    width: 100%;
+}
+.shop_tips span{
+    width: 60px;
+    height: 69px;
+    float: left;
+    display: block;
+    background: url("../images/icons.png") no-repeat -8px -248px;
+    margin-left: 90px;
+}
+.shop_tips p{
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    float:left;
+    margin-left: 20px;
+}
+.shop_msg{
+    width: 512px;
+    font-size: 17px;
+    margin-top: 22px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.shop_msg b{
+    color: #f6ab00;
+}
+
+.contiue{
+    width: 145px;
+    height: 38px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f5ffed;
+    border: 1px solid #64A131;
+    border-radius:4px;
+    color: #64A131;
+    margin-left: 98px;
+    cursor: pointer;
+}
+.deal{
+    width: 145px;
+    height: 38px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #64A131;
+    border: 1px solid #64A131;
+    border-radius:4px;
+    color: #fff;
+    margin-left: 8px;
+    cursor: pointer;
+}
