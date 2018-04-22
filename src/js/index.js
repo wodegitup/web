@@ -1,29 +1,4 @@
 
-
-$(function () {
-    //把数据库中的数据渲染出页面
-    $.getJSON("http://127.0.0.1/Fruitday/server/goodslist.php").done(function(res){
-
-        for(var index  in res){
-            var data=res[index];
-            //es6拼接字符串
-            var lihtml=`<li>
-            <div class="f-detail-img">
-                <a href="productdetail.html?g_id=${data.g_id}"><img src="${data.imgs[0]}"></a>
-                </div>
-                <div class="f-detail-msg">
-                <div class="f-detail-goods-msg">
-                <p class="goods_intro">${data.g_name}</p>
-                <span class="goods_price">¥${data.g_price}.00/16个</span>
-                </div>
-                <div class="goods_cart"></div>
-            </div>
-        </li>`;
-            $(".f_addli").append(lihtml);
-        }
-    });
-});
-
 $(function () {
 
     //点击购物车图标弹出框显示
